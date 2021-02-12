@@ -1,0 +1,18 @@
+header {
+  .header-title {
+    text-align: center;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+  }
+
+  .header-bottom-bar {
+    height: 12px;
+    border-radius: 12px;
+    background: rgb(255,102,102);
+    background: linear-gradient(90deg, rgba(255,102,102,1) 0%, rgba(255,153,121,1) 70%, rgba(238,171,255,1) 100%);
+  }
+}
