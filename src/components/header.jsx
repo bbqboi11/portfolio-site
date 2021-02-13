@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import { Link } from 'gatsby';
 
 import './header.scss';
@@ -14,7 +14,7 @@ export const Header = () => {
         <nav class="nav">
           <ul>
             <li><Link to="/">Home</Link></li>
-            <li><Link to="/works">Works</Link></li>
+            <li><Link to="/">Projects</Link></li>
             <li><Link to="/about">About</Link></li>
           </ul>
         </nav>

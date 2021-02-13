@@ -1,0 +1,69 @@
+.projects .projects-grid {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+
+  .project-container {
+    padding: 8px;
+    margin: 4px;    
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+
+    .project-description, .background {
+      grid-column: 1;
+      grid-row: 1;
+    }
+
+    
+    .project-description {
+      text-align: center;
+      color: white;
+
+      article {
+        padding: 0 20%;
+
+        .project-title {
+          color: white;
+          margin: 0;
+        }
+
+        p {
+          margin: 0;
+        }
+      }
+    }
+
+    .background {
+      padding: 48px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 350px;
+      height: 350px;
+    }
+
+    &.diamond-container .background {
+      background-color: green;
+    }
+
+    &.star-container .background {
+      background-color: pink;
+    }
+
+    &.circle-container .background {
+      background-color: peachpuff;
+    }
+
+    &.triangle-container .background {
+      background-color: plum;
+
+      img {
+        width: 350px;
+        height: 310px;
+      }
+    }
+  }
+}
