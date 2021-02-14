@@ -1,0 +1,14 @@
+.image-gallery {
+  display: flex;
+  justify-content: space-between;
+  overflow-x: auto;
+
+  &.vertical {
+    overflow-x: unset;
+    flex-direction: column;
+  }
+
+  img {
+    padding: 0 8px;
+  }
+}

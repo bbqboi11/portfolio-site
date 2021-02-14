@@ -1,63 +1,52 @@
+.projects .projects-grid-container {
+  display: flex;
+  justify-content: center;
+}
+
 .projects .projects-grid {
+  $grid-unit: 400px;
+  $gutter: 24px;
   display: grid;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
+  grid-template-rows: $grid-unit $grid-unit;
+  grid-template-columns: $grid-unit $grid-unit;
+  grid-gap: $gutter;
 
-  .project-container {
-    padding: 8px;
-    margin: 4px;    
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    border-radius: 12px;
+  > a {
+    display: block;
+  }
 
-    .project-description, .background {
-      grid-column: 1;
-      grid-row: 1;
-    }
+  .image-box {
+    position: relative;
 
-    
     .project-description {
-      text-align: center;
+      height: 100%;
+      width: 60%;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
       color: white;
+      text-align: center;
 
-      article {
-        padding: 0 20%;
-
-        .project-title {
-          color: white;
-          margin: 0;
-        }
-
-        p {
-          margin: 0;
-        }
+      .project-title {
+        color: white;
+        margin: 0;
       }
     }
 
-    .background {
-      padding: 48px;
-      border-radius: 12px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 350px;
-      height: 350px;
-    }
-
-    &.diamond-container .background {
+    &.diamond .image-background {
       background-color: green;
     }
 
-    &.star-container .background {
+    &.star .image-background {
       background-color: pink;
     }
 
-    &.circle-container .background {
+    &.circle .image-background {
       background-color: peachpuff;
     }
 
-    &.triangle-container .background {
+    &.triangle .image-background {
       background-color: plum;
 
       img {
