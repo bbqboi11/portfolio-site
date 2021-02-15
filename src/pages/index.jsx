@@ -9,7 +9,9 @@ export default () => {
   return (
     <main className="main">
       <Header />
-      <Projects />
+      <div className="content">
+        <Projects />
+      </div>
     </main>
   );
 };
