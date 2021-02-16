@@ -1,0 +1,32 @@
+.carousel {
+  position: relative;
+  $arrow-offset: -130px;
+
+  .arrow-left, .arrow-right {
+    position: absolute;
+    background: none;
+    border: none;
+    padding: 0;
+    top: 50%;
+    cursor: pointer;
+
+    > span {
+      font-size: 96px;
+      color: #A7A7A7;
+    }
+
+    &:focus, &:active {
+      background: none;
+      outline: none;
+      color: darkgray;
+    }
+  }
+
+  .arrow-left {
+    left: $arrow-offset;
+  }
+
+  .arrow-right {
+    right: $arrow-offset;
+  }
+}
